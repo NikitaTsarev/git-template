@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    overflow-y: scroll;
+    letter-spacing: 0.1em;
+    color: $color-gray;
+    font-family: $font-main;
+    font-size: $font-size;
+  }
+ 
+p {
+  color: $color-gray;
+} 
+
+h3 {
+    letter-spacing: 0.05em;
+    color: #637588;
+    font-size: 1.125rem;
+}
+
+  h2 {
+    letter-spacing: 0.1em;
+    color: $color-primary;
+    font-family: "Roboto Slab", serif;
+    line-height: 1.2em;
+}
+
+  h1 {
+    text-align: center;
+    letter-spacing: 0.08em;
+    font-family: $font-header;
+    font-weight: 300;
+    line-height: 1.2em;
+  
+    @include lg-min {
+      font-size: 3.75rem;
+    };
+    @include lg-md {
+      font-size: 2.5rem;
+    };
+    @include md {
+      font-size: 1.875rem;
+    };
+  }
+  
+  a {
+    text-decoration: none;
+  
+    color: $color-light;
+  }
+
+  .fab {
+    font-weight: 400;
+    font-family: "Font Awesome 5 Brands";
+    line-height: 1;
+  }
+  
+  .btn-accent {
+    border-color: #2d3651;
+    background-color: rgba(45, 54, 81, 0.8);
+
+    
+}
+.skills__button,
+.posts__button {
+
+  
+  @include sm-min {
+    display: flex;
+    justify-content: center;
+    
+  }
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+  .btn-accent,
+  .btn {
+    display: block;
+    height: 60px;
+    padding: 18px 20px;
+    transition: background-color 0.5s, border-color 0.5s;
+    text-align: center;
+    letter-spacing: 0.1em;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 1.125rem;
+
+    @include sm-min {
+      min-width: 350px;
+    }
+
+
+    @include lg-min {
+      min-width: 350px;
+      height: 60px;
+      padding: 18px $gap;
+      font-size: 1.125rem;
+    }
+    @include lg-md {
+      min-width: 200px;
+      height: 50px;
+      padding: 14px $gap;
+    }
+    @include md {
+      min-width: 170px;
+      height: 40px;
+      padding: 10px $gap;
+    }
+
+
+  }
+  
+  .btn-accent:focus,
+  .btn-accent:hover,
+  .btn:focus,
+  .btn:hover {
+    background-color: $color-accent;
+  }
