@@ -2,6 +2,10 @@
     background-color: #f2f2f2;
     transition: background-color 0.5s;
 
+    &:hover {
+        background-color: #d8d8d8;
+    }
+
     &__link {
 
        display: grid;
@@ -23,6 +27,10 @@
             width: 100%;
             object-fit: cover;
             transition: transform 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 
